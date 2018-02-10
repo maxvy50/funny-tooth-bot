@@ -128,7 +128,7 @@ def lets_begin(message):
 @bot.message_handler(func=lambda message: db.get_state(message.chat.id) == cfg.States.RULE1.value)
 def rule_1_answer(message):
     try:
-        if message.text in {'Пуйоль Карлес', 'Карлес Пуйоль', 'пуйоль карлес', 'карлес пуйоль'}:
+        if message.text in {'Пуйоль Карлес', 'Карлес Пуйоль', 'пуйоль карлес', 'карлес пуйоль', '1', 'Пуйоль карлес', 'пуйоль Карлес', 'Карлес пуйоль', 'карлес Пуйоль'}:
             bot.send_message(message.chat.id, 'Точно, спасибо!', reply_markup=cfg.default_markup)
             db.set_state(message.chat.id, cfg.States.SLACK.value)
             bot.send_message(message.chat.id, '✓Правило №2\nТщательная гигиена полости рта - залог здоровых зубов и свежего '

@@ -6,9 +6,9 @@ from enum import Enum
 
 token = "511300784:AAGqpH9DZtSfbLhYzklmbLXk46-Pi_LL388"
 
-db_file = os.path.dirname(os.path.abspath(__file__)) + "database.vdb"
-age_db_file = os.path.dirname(os.path.abspath(__file__)) + "age_database.vdb"
-picsdir = os.path.dirname(os.path.abspath(__file__)) + '/pics/'
+db_file = os.path.dirname(os.path.abspath(__file__)) + "/database.vdb"
+age_db_file = os.path.dirname(os.path.abspath(__file__)) + "/age_database.vdb"
+# picsdir = os.path.dirname(os.path.abspath(__file__)) + '/pics/'
 
 yes = {'Да', 'да', 'ага', 'готов', 'Готов', 'Ага', 'Ок', 'ок', 'ОК', 'ДА'}
 no = {'Нет', 'Неа', 'нет', 'не', 'не готов', 'Не готов'}
