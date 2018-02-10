@@ -1,3 +1,2 @@
 Cython
-vedis==0.6.0
 pyTelegramBotAPI==3.5.2
